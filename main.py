@@ -3,6 +3,7 @@ import pandas as pd
 
 st.title('Proposal')
 st.header('Introduction')
+st.write('Customer churn is an important issue in the telecom industry, leading to revenue loss and additional costs to acquire new customers. To tackle this, companies have started predicting customer churn by identifying those at risk. This project will aim to develop a machine learning model that accurately predicts customer churn, minimizing profit loss and improving customer retention.')
 st.header('Background')
 st.subheader('Literature Review')
 st.subheader('Dataset Description')
