@@ -83,7 +83,7 @@ st.markdown(
   """
 )
 st.subheader('Expected Results')
-st.write('The logistic regression model expects an F1-score above 0.8 to predict likely churners. PCA will reduce the dataset’s dimensions by 50% while preserving 90% of the data's variance. K-Means will segment customers into 3-5 groups with a silhouette score above 0.6, identifying at-risk customer segments for targeted retention.')
+st.write("The logistic regression model expects an F1-score above 0.8 to predict likely churners. PCA will reduce the dataset’s dimensions by 50% while preserving 90% of the data's variance. K-Means will segment customers into 3-5 groups with a silhouette score above 0.6, identifying at-risk customer segments for targeted retention.")
 st.header('Gannt Chart')
 st.header('Contribution Table')
 st.header('References')
