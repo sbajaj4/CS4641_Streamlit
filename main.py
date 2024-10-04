@@ -87,6 +87,7 @@ st.write("The logistic regression model expects an F1-score above 0.8 to predict
 st.header('Gannt Chart')
 st.header('Contribution Table')
 cont = [
+          ['Name','Proposal Contributions']
           ['Liane', 'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides'],
           ['Saumya', 'Literature review, references, Streamlit page, GitHub Repo'],
           ['Katniss', 'Intro, models, presentation slides, video'],
