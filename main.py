@@ -41,6 +41,29 @@ st.markdown(
 """
 )
 st.subheader('ML Models')
+st.markdown(
+"""
+1. Logistic Regression (Supervised):
+  - Goal: Predict the probability of customer churn based on demographic and contract features.
+  - Effectiveness:
+    - Is a well established method for binary classification
+    - Easy to interpret prediction results
+    - Can process large volumes of data at a high speed
+    - Supervised model makes sense for evaluation
+2. Principal Component Analysis (PCA) (Unsupervised):
+  - Goal: Reduce dimensionality and identify the most important components driving customer behavior.
+  - Effectiveness: 
+    - Reduce dimensionality for features
+    - More computational effective by removing irrelevant noise data in variance, especially when working with K-Means Clustering.
+    - Highlight important features
+3. K-Means Clustering (Unsupervised):
+  - Goal: Group customers into distinct clusters based on demographic and service usage patterns to identify high-risk customer segments.
+  - Effectiveness: 
+    - Able to identify similar patterns 
+    - Creates new groups of clustered data could be used for prediction training
+
+"""
+)
 st.header('Potential Results')
 st.subheader('Quantitative Metrics')
 st.subheader('Project Goals')
