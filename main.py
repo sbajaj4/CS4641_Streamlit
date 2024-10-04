@@ -93,7 +93,7 @@ cont = [
           ['Calvin', 'Machine Learning models, Data processing models, References, presentations'],
           ['Echo', 'Models, references, presentations']
         ]
-c = pd.DataFrame(cont, columns=['Name', 'Proposal Contributions'])
+c = pd.DataFrame(cont, columns=['Name', 'Proposal Contributions'], index = False)
 st.table(c)
 st.header('References')
 st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687 ')
