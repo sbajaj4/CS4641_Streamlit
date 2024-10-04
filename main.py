@@ -44,12 +44,12 @@ st.subheader('ML Models')
 st.markdown(
 """
 1. Logistic Regression (Supervised):
-  1. Goal: Predict the probability of customer churn based on demographic and contract features.
-  2. Effectiveness:
-    1. Is a well established method for binary classification
-    2. Easy to interpret prediction results
-    3. Can process large volumes of data at a high speed
-    4. Supervised model makes sense for evaluation
+  - Goal: Predict the probability of customer churn based on demographic and contract features.
+  - Effectiveness:
+    - Is a well established method for binary classification
+    - Easy to interpret prediction results
+    - Can process large volumes of data at a high speed
+    - Supervised model makes sense for evaluation
 2. Principal Component Analysis (PCA) (Unsupervised):
   - Goal: Reduce dimensionality and identify the most important components driving customer behavior.
   - Effectiveness: 
