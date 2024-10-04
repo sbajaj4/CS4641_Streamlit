@@ -87,14 +87,13 @@ st.write("The logistic regression model expects an F1-score above 0.8 to predict
 st.header('Gannt Chart')
 st.header('Contribution Table')
 cont = [
-          ['Name','Proposal Contributions'],
           ['Liane', 'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides'],
           ['Saumya', 'Literature review, references, Streamlit page, GitHub Repo'],
           ['Katniss', 'Intro, models, presentation slides, video'],
           ['Calvin', 'Machine Learning models, Data processing models, References, presentations'],
           ['Echo', 'Models, references, presentations']
         ]
-c = pd.DataFrame(cont)
+c = pd.DataFrame(cont, columns=['Name', 'Proposal Contributions'])
 st.table(c)
 st.header('References')
 st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687 ')
