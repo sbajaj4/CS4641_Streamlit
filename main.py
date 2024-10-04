@@ -22,9 +22,7 @@ The dataset used is available on Kaggle and includes 1,000 samples with customer
 """
 )
 df = pd.read_csv("customer_churn_data.csv")
-st.data_editor(df)
 st.dataframe(df)
-st.table(df)
 st.header('Problem Definition')
 st.subheader('Problem')
 st.subheader('Motivation')
