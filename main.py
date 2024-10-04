@@ -66,11 +66,30 @@ st.markdown(
 )
 st.header('Potential Results')
 st.subheader('Quantitative Metrics')
+st.markdown(
+  """
+  1. F1-Score: For evaluating classification performance in Logistic Regression, especially with imbalanced data.
+  2. Silhouette Score: For assessing the quality of customer groupings in K-Means Clustering.
+  3. Explained Variance: For measuring how much data variance is preserved in the PCA model.
+  """
+)
 st.subheader('Project Goals')
+st.markdown(
+  """
+  1. Develop accurate and interpretable models to identify customers at high risk of churn.
+  2. Use PCA to simplify the dataset and highlight the most significant customer features for actionable insights.
+  3. Promote sustainability by reducing churn, minimizing resource-intensive customer acquisition.
+  4. Avoid bias in predictions, ensuring fair treatment of sensitive demographic features.
+  """
+)
 st.subheader('Expected Results')
-st.header('References')
+st.write('The logistic regression model expects an F1-score above 0.8 to predict likely churners. PCA will reduce the dataset’s dimensions by 50% while preserving 90% of the data's variance. K-Means will segment customers into 3-5 groups with a silhouette score above 0.6, identifying at-risk customer segments for targeted retention.')
 st.header('Gannt Chart')
 st.header('Contribution Table')
+st.header('References')
+st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687 ')
+st.markdown('[2] P. Lalwani, M. K. Mishra, J. S. Chadha, and P. Sethi, “Customer churn prediction system: A machine learning approach,” Computing, vol. 104, no. 2, pp. 271–294, Feb. 2021. doi:10.1007/s00607-021-00908-y ')
+st.markdown('[3] S. De, P. P, and J. Paulose, “Effective ML techniques to predict customer churn,” 2021 Third International Conference on Inventive Research in Computing Applications (ICIRCA), Sep. 2021. doi:10.1109/icirca51532.2021.9544785')
 st.header('Github Repository')
 # ------ PART 1 ------
 
