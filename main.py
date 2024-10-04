@@ -35,18 +35,6 @@ st.date_input('Date input')
 st.time_input('Time entry')
 st.file_uploader('File uploader')
 
-# -- add download button (start) --
-@st.cache_data
-
-st.download_button(
-    label="Download data as CSV",
-    data=df,
-    file_name='large_df.csv',
-    mime='text/csv',
-)
-# -- add download button (end) --
-st.color_picker('Pick a color')
-
 # ------ PART 2 ------
 
 # Display Data
