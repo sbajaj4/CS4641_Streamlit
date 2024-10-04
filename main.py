@@ -25,6 +25,7 @@ The dataset used is available on Kaggle [4] and includes 1,000 samples with cust
 - Churn: Target variable indicating whether the customer has churned.
 """
 )
+st.link_button('Dataset', 'https://www.kaggle.com/datasets/abdullah0a/telecom-customer-churn-insights-for-analysis')
 st.header('Problem Definition')
 st.subheader('Problem')
 st.write('Customer churn negatively impacts telecom companies by reducing revenue and increasing customer acquisition costs. To mitigate this, telecom companies need a predictive model to identify customers likely to churn, allowing them to take preventive actions.')
@@ -101,6 +102,5 @@ st.table(c)
 st.header('Gantt Chart')
 st.image('./GanttChart.png')
 st.link_button('Gantt Chart', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR4m7AUYW1z9pl9Z38wzCu2Xv63LlI7Fedj6opTo7QdBGat9jsuPFo4QRQ0VApDbw/pubhtml')
-st.link_button('Dataset', 'https://www.kaggle.com/datasets/abdullah0a/telecom-customer-churn-insights-for-analysis')
 st.link_button('Github Repo', 'https://github.gatech.edu/sbajaj43/cs4641project')
 st.link_button('Source Github', 'https://github.com/sbajaj4/CS4641_Streamlit')
