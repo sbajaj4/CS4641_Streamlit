@@ -3,6 +3,8 @@ import pandas as pd
 
 # ------ PART 1 ------
 
+data = pd.read_csv("customer_churn_data.csv")
+
 # Display text
 st.text('Fixed width text')
 st.markdown('_**Markdown**_') # see #*
@@ -51,8 +53,6 @@ st.download_button(
 st.color_picker('Pick a color')
 
 # ------ PART 2 ------
-
-data = pd.read_csv("customer_churn_data.csv")
 
 # Display Data
 st.dataframe(data)
