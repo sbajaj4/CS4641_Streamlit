@@ -12,11 +12,11 @@ st.write('There is a great demand for cross-industry model evaluation as well as
 st.subheader('Dataset Description')
 st.markdown(
 """
-The dataset used is available on Kaggle and includes 1,000 samples with customer data:
+The dataset used is available on Kaggle [4] and includes 1,000 samples with customer data:
 - CustomerID: Unique identifier.
 - Age: Customer's age.
 - Gender: Customer's gender.
-- Tenure: Number of months with the service provider.
+- Tenure: Number of months with service provider.
 - MonthlyCharges: Monthly fees paid by customer.
 - ContractType: Customer's contract type.
 - InternetService: Type of internet service subscribed to.
@@ -88,6 +88,7 @@ st.header('References')
 st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687 ')
 st.markdown('[2] P. Lalwani, M. K. Mishra, J. S. Chadha, and P. Sethi, “Customer churn prediction system: A machine learning approach,” Computing, vol. 104, no. 2, pp. 271–294, Feb. 2021. doi:10.1007/s00607-021-00908-y ')
 st.markdown('[3] S. De, P. P, and J. Paulose, “Effective ML techniques to predict customer churn,” 2021 Third International Conference on Inventive Research in Computing Applications (ICIRCA), Sep. 2021. doi:10.1109/icirca51532.2021.9544785')
+st.markdown('[4] M. Abdullah, “Customer churn prediction:Analysis,” Kaggle, https://www.kaggle.com/datasets/abdullah0a/telecom-customer-churn-insights-for-analysis. ')
 st.header('Contribution Table')
 cont = [
           ['Liane', 'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides'],
@@ -98,9 +99,6 @@ cont = [
         ]
 c = pd.DataFrame(cont, columns=['Name', 'Proposal Contributions'])
 st.table(c)
-st.header('Gannt Chart Preview')
-st.image('./Screenshot 2024-10-04 013520.png')
-st.header('GitHub Repo')
+st.link_button('Dataset', 'https://www.kaggle.com/datasets/abdullah0a/telecom-customer-churn-insights-for-analysis')
+st.link_button('Gantt Chart', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR4m7AUYW1z9pl9Z38wzCu2Xv63LlI7Fedj6opTo7QdBGat9jsuPFo4QRQ0VApDbw/pubhtml')
 st.link_button('Github Repo', 'https://github.gatech.edu/sbajaj43/cs4641project')
-st.header('Dataset')
-st.dataframe(df)
