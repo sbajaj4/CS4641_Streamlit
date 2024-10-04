@@ -14,11 +14,14 @@ st.markdown(
 The dataset used is available on Kaggle and includes 1,000 samples with customer data:
 - CustomerID: Unique identifier.
 - Age: Customer's age.
-- Gender: Male/Female
+- Gender: Customer's gender.
 - Tenure: Number of months with the service provider.
 - MonthlyCharges: Monthly fees paid by the customer.
-- ContractType: Month-to-Month, One-Year, or Two-Year.
-- Churn: Target variable indicating whether the customer has churned (Yes/No).
+- ContractType: Customer's contract type.
+- InternetService: Type of internet service subscribed to.
+- TechSupport: Whether customer has tech support.
+- TotalCharges: Customer's total charges.
+- Churn: Target variable indicating whether the customer has churned.
 """
 )
 df = pd.read_csv("customer_churn_data.csv")
