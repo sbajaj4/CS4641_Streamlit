@@ -12,12 +12,12 @@ st.subheader('Dataset Description')
 st.markdown(
 """
 The dataset used is available on Kaggle and includes 1,000 samples with customer data:
--CustomerID: Unique identifier.')
--Age: Customer's age.')
--Gender: Male/Female')
--Tenure: Number of months with the service provider.')
--MonthlyCharges: Monthly fees paid by the customer.')
--ContractType: Month-to-Month, One-Year, or Two-Year.')
+-CustomerID: Unique identifier.
+-Age: Customer's age.
+-Gender: Male/Female
+-Tenure: Number of months with the service provider.
+-MonthlyCharges: Monthly fees paid by the customer.
+-ContractType: Month-to-Month, One-Year, or Two-Year.
 -Churn: Target variable indicating whether the customer has churned (Yes/No).
 """
 )
