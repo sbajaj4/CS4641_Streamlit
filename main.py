@@ -86,6 +86,18 @@ st.subheader('Expected Results')
 st.write("The logistic regression model expects an F1-score above 0.8 to predict likely churners. PCA will reduce the dataset’s dimensions by 50% while preserving 90% of the data's variance. K-Means will segment customers into 3-5 groups with a silhouette score above 0.6, identifying at-risk customer segments for targeted retention.")
 st.header('Gannt Chart')
 st.header('Contribution Table')
+cont = {
+  'Name': ['Liane', 'Saumya', 'Katniss', 'Calvin', 'Echo']
+  'Proposal Contributions': [
+                              'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides',
+                              'Literature review, references, Streamlit page, GitHub Repo',
+                              'Intro, models, presentation slides, video',
+                              'Machine Learning models, Data processing models, References, presentations',
+                              'Models, references, presentations'
+                            ]
+}
+c = pd.DataFrame(cont)
+st.table(c)
 st.header('References')
 st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687 ')
 st.markdown('[2] P. Lalwani, M. K. Mishra, J. S. Chadha, and P. Sethi, “Customer churn prediction system: A machine learning approach,” Computing, vol. 104, no. 2, pp. 271–294, Feb. 2021. doi:10.1007/s00607-021-00908-y ')
