@@ -3,8 +3,6 @@ import pandas as pd
 
 # ------ PART 1 ------
 
-df = customer_churn_data.csv
-
 # Display text
 st.text('Fixed width text')
 st.markdown('_**Markdown**_') # see #*
@@ -50,13 +48,11 @@ st.download_button(
     mime='text/csv',
 )
 # -- add download button (end) --
-
-st.camera_input("一二三,茄子!")
 st.color_picker('Pick a color')
 
 # ------ PART 2 ------
 
-data = pd.read_csv("employees.csv")
+data = pd.read_csv("customer_churn_data.csv")
 
 # Display Data
 st.dataframe(data)
