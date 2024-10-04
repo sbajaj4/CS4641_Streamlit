@@ -16,7 +16,7 @@ The dataset used is available on Kaggle and includes 1,000 samples with customer
 - Age: Customer's age.
 - Gender: Customer's gender.
 - Tenure: Number of months with the service provider.
-- MonthlyCharges: Monthly fees paid by the customer.
+- MonthlyCharges: Monthly fees paid by customer.
 - ContractType: Customer's contract type.
 - InternetService: Type of internet service subscribed to.
 - TechSupport: Whether customer has tech support.
