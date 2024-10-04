@@ -28,9 +28,18 @@ df = pd.read_csv("customer_churn_data.csv")
 st.dataframe(df)
 st.header('Problem Definition')
 st.subheader('Problem')
+st.write('Customer churn negatively impacts telecom companies by reducing revenue and increasing customer acquisition costs. To mitigate this, telecom companies need a predictive model to identify customers likely to churn, allowing them to take preventive actions.')
 st.subheader('Motivation')
+st.write('Retaining customers is far more cost-effective than acquiring new ones. By identifying customers at risk of churning, companies can improve profitability through targeted retention strategies.')
 st.header('Methods')
 st.subheader('Data Preprocessing')
+st.markdown(
+"""
+1. One-Hot Encoding: Convert categorical variables into numerical form.
+2. MinMax Scaling: Normalize numeric features 
+3. Imputation: Handle any missing data to ensure a complete dataset.
+"""
+)
 st.subheader('ML Models')
 st.header('Potential Results')
 st.subheader('Quantitative Metrics')
