@@ -3,7 +3,7 @@ import pandas as pd
 
 # ------ PART 1 ------
 
-data = pd.read_csv("customer_churn_data.csv")
+df = pd.read_csv("customer_churn_data.csv")
 
 # Display text
 st.text('Fixed width text')
@@ -37,9 +37,6 @@ st.file_uploader('File uploader')
 
 # -- add download button (start) --
 @st.cache_data
-def convert_df(df):
-    # IMPORTANT: Cache the conversion to prevent computation on every rerun
-    return df.to_csv().encode('utf-8')
 
 st.download_button(
     label="Download data as CSV",
@@ -53,25 +50,21 @@ st.color_picker('Pick a color')
 # ------ PART 2 ------
 
 # Display Data
-st.dataframe(data)
-st.table(data.iloc[0:10])
+st.dataframe(df)
+st.table(df.iloc[0:10])
 st.json({'foo':'bar','fu':'ba'})
 st.metric('My metric', 42, 2)
 
-# Media
-st.image('./smile.png')
-
 # Display Charts
-st.area_chart(data[:10])
-st.bar_chart(data[:10])
-st.line_chart(data[:10])
-# st.map(data[:10])
-st.scatter_chart(data[:10])
+st.area_chart(df[:10])
+st.bar_chart(df[:10])
+st.line_chart(df[:10])
+# st.map(df[:10])
+st.scatter_chart(df[:10])
 
 # Add sidebar
 a = st.sidebar.radio('Select one:', [1, 2])
 st.sidebar.caption("This is a cool caption")
-st.sidebar.image('./smile.png')
 
 # Add columns
 col1, col2 = st.columns(2)
