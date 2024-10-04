@@ -21,6 +21,10 @@ The dataset used is available on Kaggle and includes 1,000 samples with customer
 - Churn: Target variable indicating whether the customer has churned (Yes/No).
 """
 )
+df = pd.read_csv("customer_churn_data.csv")
+st.data_editor(df)
+st.dataframe(df)
+st.table(df)
 st.header('Problem Definition')
 st.subheader('Problem')
 st.subheader('Motivation')
@@ -73,7 +77,7 @@ st.file_uploader('File uploader')
 
 # Display Data
 st.dataframe(df)
-st.table(df.iloc[0:10])
+st.table(df)
 st.json({'foo':'bar','fu':'ba'})
 st.metric('My metric', 42, 2)
 
