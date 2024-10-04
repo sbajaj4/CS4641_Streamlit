@@ -84,7 +84,8 @@ st.markdown(
 )
 st.subheader('Expected Results')
 st.write("The logistic regression model expects an F1-score above 0.8 to predict likely churners. PCA will reduce the dataset’s dimensions by 50% while preserving 90% of the data's variance. K-Means will segment customers into 3-5 groups with a silhouette score above 0.6, identifying at-risk customer segments for targeted retention.")
-st.header('Gannt Chart')
+st.header('Gannt Chart Preview')
+st.image('./Screenshot 2024-10-04 013520.png')
 st.header('Contribution Table')
 cont = [
           ['Liane', 'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides'],
