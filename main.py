@@ -1,6 +1,25 @@
 import streamlit as st
 import pandas as pd
 
+st.title('Proposal')
+st.header('Introduction')
+st.header('Background')
+st.subheader('Literature Review')
+st.subheader('Dataset Description')
+st.header('Problem Definition')
+st.subheader('Problem')
+st.subheader('Motivation')
+st.header('Methods')
+st.subheader('Data Preprocessing')
+st.subheader('ML Models')
+st.header('Potential Results')
+st.subheader('Quantitative Metrics')
+st.subheader('Project Goals')
+st.subheader('Expected Results')
+st.header('References')
+st.header('Gannt Chart')
+st.header('Contribution Table')
+st.header('Github Repository')
 # ------ PART 1 ------
 
 df = pd.read_csv("customer_churn_data.csv")
