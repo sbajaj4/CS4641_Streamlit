@@ -92,7 +92,7 @@ st.header('Contribution Table')
 cont = [
           ['Liane', 'Dataset description, problem definition, methods, preprocessing methods, models, quantitative metrics, project goals, expected results, gantt chart, presentation slides'],
           ['Saumya', 'Literature review, references, Streamlit page, GitHub Repo'],
-          ['Katniss', 'Intro, models, presentation slides, video'],
+          ['Katniss', 'Intro, models, presentation slides, video script, video recording'],
           ['Calvin', 'Machine Learning models, Data processing models, References, presentations'],
           ['Echo', 'Models, references, presentations']
         ]
