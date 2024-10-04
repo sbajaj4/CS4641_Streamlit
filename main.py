@@ -3,13 +3,7 @@ import pandas as pd
 
 # ------ PART 1 ------
 
-df = pd.DataFrame(
-    [
-       {"command": "st.selectbox", "rating": 4, "is_widget": True},
-       {"command": "st.balloons", "rating": 5, "is_widget": False},
-       {"command": "st.time_input", "rating": 3, "is_widget": True},
-   ]
-)
+df = customer_churn_data.csv
 
 # Display text
 st.text('Fixed width text')
