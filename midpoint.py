@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.link_button('Proposal Page', 'https://cs4641app-2rfsbvjafljjpeuzevwkdr.streamlit.app/')
+
 st.caption('Saumya Bajaj, Katniss Min, Liane Nguyen, Calvin Truong, Xiangyi Zhu')
 st.title('Midpoint Report')
 
@@ -185,4 +187,3 @@ st.link_button('Gantt Chart', 'https://docs.google.com/spreadsheets/d/e/2PACX-1v
 st.header('Code and Links')
 st.link_button('Github Repo', 'https://github.gatech.edu/sbajaj43/cs4641project')
 st.link_button('Source Github', 'https://github.com/sbajaj4/CS4641_Streamlit')
-st.link_button('Proposal Page', 'https://cs4641app-2rfsbvjafljjpeuzevwkdr.streamlit.app/')
