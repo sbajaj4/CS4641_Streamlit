@@ -109,22 +109,22 @@ st.markdown(
   - To visualize the logistic regression model’s effectiveness in separating churned and non-churned customers, we created a scatter plot showing the decision boundary in the transformed PCA space. This plot allowed us to observe how well the model differentiates between customer classes within a simplified, two-component feature space.
 """
 )
-st.image(./ScatterDecision.png)
+st.image('./ScatterDecision.png')
 st.markdown(
 """
 - Confusion Matrix:
   - The confusion matrix illustrates the model’s performance on the test data, showing counts for true positives (churned correctly identified), true negatives (not churned correctly identified), false positives, and false negatives. This visualization helps evaluate the model’s accuracy and the distribution of prediction errors, revealing strengths and areas for improvement.
 """
 )
-st.image(./ConfusionMatrix.png)
-st.image(./ConfMatrix.png)
+st.image('./ConfusionMatrix.png')
+st.image('./ConfMatrix.png')
 st.markdown(
 """
 - Classification Report:
   - The classification report includes precision, recall, F1-score, and support metrics for each class, with a focus on the “churned” category. High recall and F1-score for the churned class indicate the model’s strong ability to detect at-risk customers, which is essential for customer retention.
 """
 )
-st.image(./ScatterAccuracy.png)
+st.image('./ScatterAccuracy.png')
 st.subheader('Logistic Regression Model Quantitative Metrics')
 st.markdown(
 """
