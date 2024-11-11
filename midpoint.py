@@ -184,6 +184,6 @@ st.header('Gantt Chart')
 st.image('./GanttMidpoint.png')
 st.link_button('Gantt Chart', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR4m7AUYW1z9pl9Z38wzCu2Xv63LlI7Fedj6opTo7QdBGat9jsuPFo4QRQ0VApDbw/pubhtml')
 
-st.header('Code and Links')
+st.header('Repos')
 st.link_button('Github Repo', 'https://github.gatech.edu/sbajaj43/cs4641project')
 st.link_button('Source Github', 'https://github.com/sbajaj4/CS4641_Streamlit')
