@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.link_button('Proposal Page', 'https://cs4641app-2rfsbvjafljjpeuzevwkdr.streamlit.app/')
+st.link_button('Final Page', 'https://cs4641app-zjas8xgavsgjbuet5bgjs5.streamlit.app/')
 
 st.caption('Saumya Bajaj, Katniss Min, Liane Nguyen, Calvin Truong, Xiangyi Zhu')
 st.title('Midpoint Report')
