@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 
 st.link_button('Proposal Page', 'https://cs4641app-2rfsbvjafljjpeuzevwkdr.streamlit.app/')
+st.link_button('Midpoint Page', 'https://cs4641app-ku7rbyr7fex2w9kwhg43bf.streamlit.app/')
 
 st.caption('Saumya Bajaj, Katniss Min, Liane Nguyen, Calvin Truong, Xiangyi Zhu')
-st.title('Midpoint Report')
+st.title('Final Report')
 
 st.header('Introduction and Background')
 st.subheader('Introduction')
@@ -61,10 +62,8 @@ st.markdown(
   - Goal: Logistic regression is designed to predict customer churn probability by analyzing demographic and contract features, focusing on binary classification (churn vs. not churn). This approach is well-suited for identifying at-risk customers, supporting proactive retention efforts.
   - Effectiveness: Logistic regression efficiently handles large datasets, providing interpretable coefficients that reveal each feature's impact on churn. This interpretability supports targeted retention strategies, and the model's linearity allows for quick, effective classification, making it ideal for timely churn prediction and enabling telecom companies to make data-driven retention decisions.
 3. K-Means Clustering (Unsupervised):
-  - Goal: Group customers into distinct clusters based on demographic and service usage patterns to identify high-risk customer segments.
-  - Effectiveness: 
-    - Able to identify similar patterns 
-    - Creates new groups of clustered data could be used for prediction training
+  - Goal: Group customers into distinct clusters based on demographic and service usage patterns to identify high-risk customer segments. This approach provides the features of high risk churning customers for pattern analysis, and also prediction for behaviors and use cases.
+  - Effectiveness: K-Means is able to identify similar patterns of customers who churned, and it can create new groups of clustered data which could be feasible for prediction training and churning pattern analysis. 
 """
 )
 
@@ -163,6 +162,40 @@ st.markdown(
 """
 )
 
+st.subheader('K-Means Model Visualizations')
+st.markdown(
+"""
+- Clustering Visualization:
+  - The visualization represents the segregation of the customers into three distinct clusters: Cluster 0, Cluster 1, and Cluster 2, mapped in a two-dimensional plane through the first two principal components, PC1 and PC2. The data for each cluster is represented by a different color scheme: red for Cluster 0, green for Cluster 1, and blue for Cluster 2. The clusters separately show that K-Means has successfully grouped customers of similar characteristics into distinct segments.
+  - Cluster 0 (red) is on the positive side of PC1 and is relatively compact, which means this cluster of customers is more similar to each other in terms of the features considered. Cluster 1 (green) spreads along the positive side of PC2, indicating that in this group of customers, there is much more variance among them in terms of characteristics or behaviors. Cluster 2 is blue and is located mainly on the negative axes of both PC1 and PC2, which separates it from the other clusters. This separation shows that the customers in Cluster 2 show very different characteristics compared to those in Clusters 0 and 1.
+  - The profiling and discrimination of the clusters provide much insight into customer segmentation. The special distribution of clusters in this PCA plot, for example, reveals divergence in customer characteristics, contract type, internet service, and churn behavior. That helps organizations to identify different customer profiles related to an increased risk of churn and to develop specific approaches based on their particular needs. The density of the clusters further proves the appropriateness of K-Means for creating substantial groupings that can then be used to improve customer retention strategies in telecommunications.
+"""
+)
+st.image('./ScatterDecision.png')
+st.subheader('Logistic Regression Model Quantitative Metrics')
+st.markdown(
+"""
+- Intertia (within-cluster sum of squares):
+  - ?
+- Silhouette Score:
+  - ?
+- Elbow Method:
+  - ?
+"""
+)
+st.subheader('K-Means Model Analysis')
+st.markdown(
+"""
+- K-Means algorithm allows for the grouping of customers into clusters based on similar characteristics, including age, tenure, monthly charges, and service preferences. The clustering explains patterns and behaviors associated with customer churn that are actionable by an organization. By fostering cluster homogeneity, K-Means helps telecommunications companies understand the typical characteristics of high-churn groups; for instance, a group of customers on monthly plans and without technical support would indicate a tendency to switch. Each cluster represents one distinct profile of customers: long-term, loyal subscribers with two-year contracts versus short-term, new customers with higher churn rates, which feeds into strategic decision-making on resource allocation. The model also supports predicting and preventing customer churn by identifying clusters with high churn rates, which motivates actions such as offering discounts or bundling services to retain these customers. In addition, the K-Means clustering method reveals shortcomings in services or products, such as a cluster of high-churn customers who do not have internet service, indicating dissatisfaction with other telecommunication services and triggering actions to address these issues.
+"""
+)
+st.subheader('K-Means Model Next Steps')
+st.markdown(
+"""
+- To analyze further by examining if certain clusters have higher churn rates, and the  factors (such as contract types, tech support, or internet service) contributing to customer retention or churn. This could provide more actionable insights for customer retention strategies.
+"""
+)
+
 st.header('References')
 st.markdown('[1] J. Bhattacharyya and M. K. Dash, “What do we know about customer churn behaviour in the telecommunication industry? A bibliometric analysis of Research Trends, 1985–2019,” FIIB Business Review, vol. 11, no. 3, pp. 280–302, Dec. 2021. doi:10.1177/23197145211062687')
 st.markdown('[2] P. Lalwani, M. K. Mishra, J. S. Chadha, and P. Sethi, “Customer churn prediction system: A machine learning approach,” Computing, vol. 104, no. 2, pp. 271–294, Feb. 2021. doi:10.1007/s00607-021-00908-y')
@@ -171,13 +204,13 @@ st.markdown('[4] M. Abdullah, “Customer churn prediction:Analysis,” Kaggle, 
 
 st.header('Contribution Table')
 cont = [
-          ['Liane', 'PCA Code, PCA results and discussion, draft/review of overall midpoint report'],
-          ['Saumya', 'Data Preprocessing, PCA Research, PCA Code, Draft/review of overall midpoint report'],
+          ['Liane', 'PCA Code, PCA results and discussion, Draft/review of overall final report'],
+          ['Saumya', 'Data Preprocessing, PCA Research, PCA Code, Draft/review of overall final report'],
           ['Katniss', 'Logistic Regression Code, Logistic Regression results and discussion, draft/review of overall midpoint report'],
-          ['Calvin', 'Code review, Draft/review of overall midpoint report, working on K-Means'],
-          ['Echo', 'Code review, Draft/review of overall midpoint report, working on K-Means']
+          ['Calvin', 'K-Means Code, K-Means results and discussion, Draft/review of overall final report'],
+          ['Echo', 'K-Means Code, K-Means results and discussion, Draft/review of overall final report']
         ]
-c = pd.DataFrame(cont, columns=['Name', 'Proposal Contributions'])
+c = pd.DataFrame(cont, columns=['Name', 'Final Contributions'])
 st.table(c)
 
 st.header('Gantt Chart')
