@@ -197,7 +197,7 @@ st.markdown(
 )
 
 st.header('Model Comparisons')
-st.subheader('Summary of Comparison of Approaches')
+st.subheader('Summary of Model Comparisons')
 st.markdown(
 """
 - PCA is not directly predictive like Logistic Regression or descriptive like K-Means, but is a useful pre-processing step and can help models perform better.
