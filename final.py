@@ -172,7 +172,7 @@ st.markdown(
 """
 )
 st.image('./KMeans.png')
-st.subheader('Logistic Regression Model Quantitative Metrics')
+st.subheader('K-Means Model Quantitative Metrics')
 st.markdown(
 """
 - Intertia (within-cluster sum of squares):
