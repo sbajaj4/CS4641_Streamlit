@@ -197,15 +197,6 @@ st.markdown(
 )
 
 st.header('Model Comparisons')
-st.subheader('Summary of Comparison of Approaches')
-st.markdown(
-"""
-- PCA is not directly predictive like Logistic Regression or descriptive like K-Means, but is a useful pre-processing step and can help models perform better.
-- Logistic Regression is supervised unlike K-Means, so serves as a baseline predictive model and is best for straightforward results.
-- K-Means is unsupervised unlike PCA, so is more likely to provide more descriptive results and can help companies create tailored retention policies based on clusters.
-"""
-)
-st.write('Logistic Regression is a supervised model unlike ')
 st.subheader('Comparison of Approaches')
 st.markdown(
 """
