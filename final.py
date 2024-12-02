@@ -171,7 +171,7 @@ st.markdown(
   - The profiling and discrimination of the clusters provide much insight into customer segmentation. The special distribution of clusters in this PCA plot, for example, reveals divergence in customer characteristics, contract type, internet service, and churn behavior. That helps organizations to identify different customer profiles related to an increased risk of churn and to develop specific approaches based on their particular needs. The density of the clusters further proves the appropriateness of K-Means for creating substantial groupings that can then be used to improve customer retention strategies in telecommunications.
 """
 )
-st.image('./ScatterDecision.png')
+st.image('./KMeans.png')
 st.subheader('Logistic Regression Model Quantitative Metrics')
 st.markdown(
 """
@@ -197,9 +197,66 @@ st.markdown(
 )
 
 st.header('Model Comparisons')
+st.subheader('Comparison of Approaches')
 st.markdown(
 """
-- ?
+- PCA
+  - Strengths
+    - Reduced the dimensionality of the dataset, keeping 91.18% of the variance with two components. This helped reduce noise and redundant features for the Logistic Regression model.
+    - It helped eliminate redundant features, improving model stability and interpretability as it focused on the most informative features.
+    - Allowed to show effective visualisations, helping interpret how different features were contributing to the principal components.
+  - Limitations
+    - Because PCA transforms original features into principal components, it makes it difficult to interpret the direct impact of each feature on customer churn.
+    - While it simplified the dataset, it may have resulted in the loss of some minor details that could potentially be useful in more complex scenarios.
+  - Metric Insights
+    - The correlation matrix heatmap showed highly correlated features and allowed the removal of features that were highly correlated, such as TotalCharges and Gender_Male. Thus, those features were dropped to prevent redundancy.
+    - The principal components map showed strong contributions from ContractType and InternetService regarding customer behaviour. This visualisation also assists in interpreting the role each feature plays after reduction, even though PCA combines them into components. 
+    - The explained variance of 91.18% shows that PCA has successfully reduced the dataset’s complexity while retaining the key patterns.
+- Logistic Regression
+  - Strengths
+    - Achieved high accuracy (89.5%) and had strong recall and F1-scores for the “churned” customers, which made it effective in identifying at-risk customers.
+    - Easy to interpret and gain insights into which customer attributes had more influence on churn due to its simplicity.
+    - With the help of PCA preprocessing, noise and redundant features were reduced, which helped improve the model’s performance and stability.
+  - Limitations
+    - Logistic regression is based on an assumption that there is a linear relationship between features and the target variable, which means its ability to capture more complex patterns in customer behaviour  may be limited.
+    - There are more churned customers compared to non-churned customers, meaning the model could potentially overpredict churned customers
+  - Metric Insights
+    - The scatter plot with a decision boundary showed how the logistic regression model differentiated between churned and non-churned customers.
+    - The confusion matrix showed the model’s ability to identify churned customers accurately, along with a few false positives.
+    - The classification report showed a good balance between precision, recall, and F1-score for churned customers. This shows its effectiveness in detecting at-risk customers.
+- K-Means
+  - Strengths
+  - Limitations
+  - Metric Insights
+"""
+)
+st.subheader('Tradeoffs')
+st.markdown(
+"""
+- PCA simplifies the data by its ability to reduce dimensions but it comes at the cost of interpretability. While it retains more of the variance, it transforms original features into components which may be harder to understand.
+- While logistic regression is easy to interpret, it may not capture more complex patterns where the features and target variable interact in a non-linear way due to its assumption that there is a linear relationship between the features and target variable.
+- KMeans is unsupervised, meaning it does not directly optimise for churn prediction. While it may be useful for customer segmentation, the results need to be combined with other predictive models such as logistic regression for more meaningful insights.
+- On the other hand, logistic regression provides a direct prediction for churn, which makes it very suitable to identify at-risk customers.
+"""
+)
+st.subheader('Model Performance')
+st.markdown(
+"""
+- PCA performed well in simplifying the dataset and interpreting the key features. However, it reduced direct interpretability as it combined features into principal components.
+- Logistic Regression had a high accuracy in terms of predicting churn, especially because PCA was able to reduce the complexity of the feature space. The model was able to identify key factors influencing churn and provided a good balance of precision and recall.
+- K-Means ?
+"""
+)
+st.subheader('Next Steps')
+st.markdown(
+"""
+We can introduce new models to address some of the weaknesses of the models we chose:
+- Random Forest: 
+  - Combines multiple decision trees, which can help increase accuracy compared to Logistic Regression to upwards of 90% 
+  - Provides feature importance by nature of random forest, reducing the need for PCA allowing us to include all the features
+- Hierarchical Clustering:
+  - Does not assume spherical data, which can improve upon K-Means performance for data which is not necessarily spherical as it often is not in real datasets and reveal more complex relationships
+  - Creates a dendrogram of the hierarchy of clusters, which would not be revealed by Logistic Regression and would allow for more tailored retention strategies compared to just predicting whether a customer will churn or not
 """
 )
 
