@@ -269,10 +269,10 @@ st.markdown('[4] M. Abdullah, “Customer churn prediction:Analysis,” Kaggle, 
 st.header('Contribution Table')
 cont = [
           ['Liane', 'PCA Code, PCA results and discussion, Draft/review of overall final report'],
-          ['Saumya', 'Data Preprocessing, PCA Research, PCA Code, Draft/review of overall final report'],
-          ['Katniss', 'Logistic Regression Code, Logistic Regression results and discussion, draft/review of overall midpoint report'],
-          ['Calvin', 'K-Means Code, K-Means results and discussion, Draft/review of overall final report'],
-          ['Echo', 'K-Means Code, K-Means results and discussion, Draft/review of overall final report']
+          ['Saumya', 'Data Preprocessing, PCA Research, PCA Code, Model Comparison, Draft/review of overall final report'],
+          ['Katniss', 'Logistic Regression Code, Logistic Regression results and discussion, Model Comparison, Draft/review of overall final report'],
+          ['Calvin', 'K-Means Code, K-Means results and discussion, Model Comparison, Draft/review of overall final report'],
+          ['Echo', 'K-Means Code, K-Means results and discussion, Model Comparison, Draft/review of overall final report']
         ]
 c = pd.DataFrame(cont, columns=['Name', 'Final Contributions'])
 st.table(c)
