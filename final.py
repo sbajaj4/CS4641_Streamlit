@@ -123,7 +123,6 @@ st.markdown(
   - The confusion matrix illustrates the model’s performance on the test data, showing counts for true positives (churned correctly identified), true negatives (not churned correctly identified), false positives, and false negatives. This visualization helps evaluate the model’s accuracy and the distribution of prediction errors, revealing strengths and areas for improvement.
 """
 )
-st.image('./ConfuseMatrix.png')
 st.image('./ConfusionMatrix.png')
 st.image('./ConfMatrix.png')
 st.markdown(
@@ -132,7 +131,7 @@ st.markdown(
   - The classification report includes precision, recall, F1-score, and support metrics for each class, with a focus on the “churned” category. High recall and F1-score for the churned class indicate the model’s strong ability to detect at-risk customers, which is essential for customer retention.
 """
 )
-st.image('./ScatterAccuracy.png')
+st.image('./ConfuseMatrix.png')
 st.subheader('Logistic Regression Model Quantitative Metrics')
 st.markdown(
 """
