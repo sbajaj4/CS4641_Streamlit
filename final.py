@@ -188,14 +188,13 @@ st.markdown(
   - The Elbow Method showed a distinct bend at k=3.
 - Intertia (within-cluster sum of squares):
   - Inertia measures the sum of squared distances between all data points and their closest cluster centroids; the lower the value, the more compact the clusters are.
-  - We got the Inertia (Within-Cluster Sum of Squares) of 2075.69 using the Elbow Method.
-  - An inertia of 2075.69 suggests a certain level of compactness, but further validation methods should be employed to confirm the effectiveness of the clustering solution.
+  - We got the Inertia (Within-Cluster Sum of Squares) of 1801.69 at k=3 using the Elbow Method.
 """
 )
 st.subheader('K-Means Model Analysis')
 st.markdown(
 """
-- Clustering is segregated into three groups, as further elaborated by the results of Elbow Method which shows a distinct bend at this point. The model generated an inertia of 2075.69, indicating compact clusters. The clusters are probably indicative of low-tenure, low-charge customers identified as those susceptible to possible churn, medium-tenure, moderate-charge customers who are ideal candidates for an upselling strategy, and long-tenure, high-charge loyal customers who could be rewarded through loyalty programs. All of these valuable insights prove useful for supporting retention and marketing strategies through targeted engagement, upselling, and loyalty interventions. Although results can be acted on, moderate overlap suggests that adding other variables, for example, ContractType or InternetService, would produce better separation for the clusters and hence improve relevance. This model, therefore, strongly grounds the trend of customer segmentation approaches towards retention and personalization efforts. 
+- Clustering is segregated into three groups, as further elaborated by the results of Elbow Method which shows a distinct bend at this point. The model generated an inertia of 1801.69, indicating compact clusters. The clusters are probably indicative of low-tenure, low-charge customers identified as those susceptible to possible churn, medium-tenure, moderate-charge customers who are ideal candidates for an upselling strategy, and long-tenure, high-charge loyal customers who could be rewarded through loyalty programs. All of these valuable insights prove useful for supporting retention and marketing strategies through targeted engagement, upselling, and loyalty interventions. Although results can be acted on, moderate overlap suggests that adding other variables, for example, ContractType or InternetService, would produce better separation for the clusters and hence improve relevance. This model, therefore, strongly grounds the trend of customer segmentation approaches towards retention and personalization efforts. 
 - For example, Cluster 1 demonstrates high churn rates, primarily due to customers subscribing to plans such as prepaid, which does not require long-term commitments to the service. Alternatively, the cluster is also likely to consist of those who do not use the internet and instead rely only on a traditional landline or prepaid monthly phone plan. 
 """
 )
