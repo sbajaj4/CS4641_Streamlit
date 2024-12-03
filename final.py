@@ -173,6 +173,13 @@ st.markdown(
 """
 )
 st.image('./KMeans.png')
+st.markdown(
+"""
+- Inertia (WCSS):
+  - Inertia measures the compactness of clusters and is calculated as the sum of squared distances between points and their respective cluster centroids.
+	•	It's used in the elbow method to find the point where increasing the number of clusters no longer significantly reduces WCSS.
+"""
+)
 st.subheader('K-Means Model Quantitative Metrics')
 st.markdown(
 """
@@ -235,8 +242,15 @@ st.markdown(
     - The classification report showed a good balance between precision, recall, and F1-score for churned customers. This shows its effectiveness in detecting at-risk customers.
 - K-Means
   - Strengths
+    - K-Means performs well with datasets with many features when the number of clusters is small and the clusters are spherical.
+    - The algorithm converges quickly especially when the number of data points is large, which makes it very efficient for quick clustering of big datasets.
   - Limitations
+    - The number of clusters need to be predefined before running the algorithm, which requires one extra step (elbow method) for  further analysis.
+    - K-Means is not suitable for data with clusters that have different sizes or densities. It may fail to identify irregularly shaped clusters, leading to poor clustering results.
+    - K-Means is sensitive to outliers that can distort the placement of centroids, especially in cases with few data points. K-Means reduces the total distance between points and their cluster centers, which means that outliers can strongly influence the clustering results.
   - Metric Insights
+    - Elbow method was used to find the proper number of clusters and there was a clear 'elbow' turning point.
+    - The 2D scatter plot using PCA to visualize clustering results was successful in that it clearly showed 3 cluster groups, each cluster was within proper distance to its centroids.
 """
 )
 st.subheader('Tradeoffs')
