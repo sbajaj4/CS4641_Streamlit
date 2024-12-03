@@ -175,26 +175,28 @@ st.markdown(
 st.image('./KMeans.png')
 st.markdown(
 """
-- Inertia (WCSS):
-  - Inertia measures the compactness of clusters and is calculated as the sum of squared distances between points and their respective cluster centroids.
-	•	It's used in the elbow method to find the point where increasing the number of clusters no longer significantly reduces WCSS.
+- Elbow Method
+  - The K-Means clustering model is evaluated using a number of metrics, such as inertia (within-cluster sum of squares) to make an assessment of how good the grouping of data points within clusters is. It's used in the elbow method to find the point where increasing the number of clusters no longer significantly reduces WCSS.
 """
 )
+st.image('./elbow.png')
 st.subheader('K-Means Model Quantitative Metrics')
 st.markdown(
 """
+- Elbow Method
+  - To assess the optimal number of clusters, inertia is often combined with methods like the Elbow Method, which identifies a point where the rate of decrease in inertia significantly slows, indicating a balance between compactness and generalizability.
+  - The Elbow Method showed a distinct bend at k=3.
 - Intertia (within-cluster sum of squares):
-  - ?
-- Silhouette Score:
-  - ?
-- Elbow Method:
-  - ?
+  - Inertia measures the sum of squared distances between all data points and their closest cluster centroids; the lower the value, the more compact the clusters are.
+  - We got the Inertia (Within-Cluster Sum of Squares) of 2075.69 using the Elbow Method.
+  - An inertia of 2075.69 suggests a certain level of compactness, but further validation methods should be employed to confirm the effectiveness of the clustering solution.
 """
 )
 st.subheader('K-Means Model Analysis')
 st.markdown(
 """
-- K-Means algorithm allows for the grouping of customers into clusters based on similar characteristics, including age, tenure, monthly charges, and service preferences. The clustering explains patterns and behaviors associated with customer churn that are actionable by an organization. By fostering cluster homogeneity, K-Means helps telecommunications companies understand the typical characteristics of high-churn groups; for instance, a group of customers on monthly plans and without technical support would indicate a tendency to switch. Each cluster represents one distinct profile of customers: long-term, loyal subscribers with two-year contracts versus short-term, new customers with higher churn rates, which feeds into strategic decision-making on resource allocation. The model also supports predicting and preventing customer churn by identifying clusters with high churn rates, which motivates actions such as offering discounts or bundling services to retain these customers. In addition, the K-Means clustering method reveals shortcomings in services or products, such as a cluster of high-churn customers who do not have internet service, indicating dissatisfaction with other telecommunication services and triggering actions to address these issues.
+- Clustering is segregated into three groups, as further elaborated by the results of Elbow Method which shows a distinct bend at this point. The model generated an inertia of 2075.69, indicating compact clusters. The clusters are probably indicative of low-tenure, low-charge customers identified as those susceptible to possible churn, medium-tenure, moderate-charge customers who are ideal candidates for an upselling strategy, and long-tenure, high-charge loyal customers who could be rewarded through loyalty programs. All of these valuable insights prove useful for supporting retention and marketing strategies through targeted engagement, upselling, and loyalty interventions. Although results can be acted on, moderate overlap suggests that adding other variables, for example, ContractType or InternetService, would produce better separation for the clusters and hence improve relevance. This model, therefore, strongly grounds the trend of customer segmentation approaches towards retention and personalization efforts. 
+- For example, Cluster 1 demonstrates high churn rates, primarily due to customers subscribing to plans such as prepaid, which does not require long-term commitments to the service. Alternatively, the cluster is also likely to consist of those who do not use the internet and instead rely only on a traditional landline or prepaid monthly phone plan. 
 """
 )
 st.subheader('K-Means Model Next Steps')
