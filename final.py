@@ -183,12 +183,12 @@ st.image('./elbow.png')
 st.subheader('K-Means Model Quantitative Metrics')
 st.markdown(
 """
-- Elbow Method
-  - To assess the optimal number of clusters, inertia is often combined with methods like the Elbow Method, which identifies a point where the rate of decrease in inertia significantly slows, indicating a balance between compactness and generalizability.
-  - The Elbow Method showed a distinct bend at k=3.
 - Intertia (within-cluster sum of squares):
   - Inertia measures the sum of squared distances between all data points and their closest cluster centroids; the lower the value, the more compact the clusters are.
   - We got the Inertia (Within-Cluster Sum of Squares) of 1801.69 at k=3 using the Elbow Method.
+- Elbow Method
+  - To assess the optimal number of clusters, inertia is often combined with methods like the Elbow Method, which identifies a point where the rate of decrease in inertia significantly slows, indicating a balance between compactness and generalizability.
+  - The Elbow Method showed a distinct bend at k=3.
 """
 )
 st.subheader('K-Means Model Analysis')
